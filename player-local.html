@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>详情页-PiliPili</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body background="sources/14.jpg"
+    style="background-size: 100%,100%;">
+    <span></span>
+    <div style="background-color: rgba(255,255,255,0.5); position: absolute;width: 100%;height: 100%;"></div>
+    <div style="left: 50%;transform: translate(-50%,0); position: absolute;top: 10px;" >
+        <video src="" controls="controls" class="player" autoplay="autoplay" id="video"></video>
+        <div>
+            <button class="btn" onclick="fast()">Submit</button>
+            <input class="inp" type="text" placeholder="请输入播放倍速" id="speed">
+            <div class="btn" style="float: right;width: 110px;text-align: center;line-height: 32px;user-select: none;">
+                <input type="file" value="open files" id="open" onchange="choosevideo()" style="opacity: 0;position: absolute;width: 100%;">
+                open files
+            </div>
+        </div>
+    </div>
+    <script src="js/button.js" ></script>
+</body>
+</html>
