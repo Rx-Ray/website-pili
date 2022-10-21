@@ -1,0 +1,20 @@
+{
+    "name":"biliex",
+    "version":"1.0",
+    "description":"Change background and video speed.",
+    "manifest_version": 2,
+    "browser_action":{
+        "default_popup": "ui.html"
+    },
+    "background": {
+        "scripts": ["control.js"],
+        "persistent": true
+    },
+    "content_scripts": [{
+        "matches": ["<all_urls>"],
+        "js": ["control.js","JQuery2.1.4.js"],
+        "css":["dark.css"],
+        "run_at": "document_end"
+        }
+    ]
+}
