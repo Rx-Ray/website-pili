@@ -21,3 +21,9 @@ function ani(){
     ttt.style.visibility="hidden"
     tff.style.visibility="hidden"
 }
+
+function gos(){
+    link="https://search.bilibili.com/all?keyword=keywords&from_source=webtop_search&spm_id_from=333.1007&search_source=2";
+    key=document.getElementById("rr").value;
+    window.open(link.replace("keywords",key));
+}

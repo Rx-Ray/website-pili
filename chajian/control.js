@@ -45,7 +45,6 @@ function f(){
             var btn3=document.getElementById("diybtn3");
             fast.addEventListener("click",function(){
                 var speed=sped.value;
-                alert(speed)
                 document.getElementsByTagName("video")[0].playbackRate = speed;
                 document.getElementsByTagName("bwp-video")[0].playbackRate = speed;
             }
